@@ -60,7 +60,7 @@ app.get('/weather', (req, res)=>{
            //console.log();
            res.send({
             address:req.query.address,
-            forecast:weather_description+ ". It is currently "+ temp + " degrees out. There is "+ precep + "% chance of rain. Humidity " +humidity ,
+            forecast:weather_description+ ". It is currently "+ temp + " degrees out. There is "+ precep + "% chance of rain. Humidity " + humidity + "%" ,
             location,
             temp,
             precep
